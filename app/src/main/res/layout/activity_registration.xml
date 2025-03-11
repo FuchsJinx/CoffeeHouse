@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/cream">
+
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginBottom="16dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="@string/createLogin"
+        android:inputType="text"
+        android:textColor="@color/dark_chocolate"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/passwordConfirmation"
+        android:inputType="textPassword"
+        android:textColor="@color/dark_chocolate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/dark_chocolate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/dark_chocolate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="203dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="54dp"
+        android:backgroundTint="@color/coffee_brown"
+        android:inputType="textEmailAddress"
+        android:text="@string/register"
+        android:textColor="@color/cream"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="173dp"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:onClick="goToLogin"
+        android:text="@string/alredyRegister"
+        android:textColor="@color/dark_chocolate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.CoffeHouse" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/coffee_brown</item>
+        <item name="colorPrimaryVariant">@color/coffee_brown</item>
+        <item name="colorOnPrimary">@color/coffee_brown</item>
+
+        <item name="colorSecondary">@color/coffee_brown</item>
+        <item name="colorSecondaryVariant">@color/coffee_brown</item>
+        <item name="colorOnSecondary">@color/coffee_brown</item>
+    </style>
+
+    <style name="Theme.CoffeHouse" parent="Base.Theme.CoffeHouse" />
+</resources>

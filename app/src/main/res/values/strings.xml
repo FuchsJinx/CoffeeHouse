@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Coffe House</string>
+    <string name="username">Имя пользователя</string>
+    <string name="password">Введите пароль</string>
+    <string name="passwordConfirmation">Подтвердите пароль</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="alredyRegister">Уже зарегистрированы? Войти</string>
+    <string name="email">Электронная почта</string>
+    <string name="login">Войти</string>
+    <string name="notRegister">Зарегистрироваться</string>
+    <string name="createLogin">Создайте логин</string>
+    <string name="enterLogin">Введите логин</string>
+    <string name="menu">Меню</string>
+    <string name="orders">Заказы</string>
+    <string name="map">Карта</string>
+    <string name="activities">Мероприятия</string>
+    <string name="account">Аккаунт</string>
+</resources>
