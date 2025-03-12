@@ -10,8 +10,13 @@
         android:layout_height="match_parent"
         android:padding="16dp"
         android:text="Раздел"
-        android:textSize="20sp"
+        android:textSize="28sp"
         android:textColor="@color/dark_chocolate"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_bottom" />
 
     <LinearLayout
         android:id="@+id/child_layout"
@@ -24,5 +29,10 @@
             android:id="@+id/child_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/shadow_bottom" />
     </LinearLayout>
 </LinearLayout>
