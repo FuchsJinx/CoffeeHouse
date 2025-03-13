@@ -43,20 +43,20 @@ public class LoginActivity extends AppCompatActivity {
         String password = editTextPassword.getText().toString().trim();
 
         if (username.isEmpty() || password.isEmpty()) {
-            showError("Все поля должны быть заполнены");
+            showInfo("Все поля должны быть заполнены");
             return;
         }
 
         if (!databaseHelper.loginUser (username, password)) {
-            showError("Неверный логин или пароль");
+            showInfo("Неверный логин или пароль");
             editTextUsername.setTextColor(Color.RED);
             editTextPassword.setTextColor(Color.RED);
-            return;
         }
 
         else {
-            Toast.makeText(this, "Вход успешен", Toast.LENGTH_SHORT).show();
-            goToMain();
+            showInfo("Вход успешен");
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
             finish();
         }
     }
@@ -66,12 +66,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToMain() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    private void showError(String message) {
+    private void showInfo(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

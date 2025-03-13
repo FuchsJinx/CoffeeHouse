@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orders_nav_graph"
+    app:startDestination="@id/navigation_orders_buy">
+
+    <fragment
+        android:id="@+id/navigation_orders_buy"
+        android:name="com.karpeko.coffehouse.ui.dashboard.insideOrders.OrdersBuyFragment"
+        android:label="Заказ кофе"
+        tools:layout="@layout/fragment_orders_buy" />
+
+    <fragment
+        android:id="@+id/navigation_orders_table"
+        android:name="com.karpeko.coffehouse.ui.dashboard.insideOrders.OrdersTableFragment"
+        android:label="Бронирование"
+        tools:layout="@layout/fragment_orders_table" />
+
+    <fragment
+        android:id="@+id/navigation_orders_history"
+        android:name="com.karpeko.coffehouse.ui.dashboard.insideOrders.OrdersHistoryFragment"
+        android:label="История"
+        tools:layout="@layout/fragment_orders_history" />
+
+    <fragment
+        android:id="@+id/navigation_orders_sale"
+        android:name="com.karpeko.coffehouse.ui.dashboard.insideOrders.OrdersSaleFragment"
+        android:label="Акциии"
+        tools:layout="@layout/fragment_orders_sale" />
+</navigation>
