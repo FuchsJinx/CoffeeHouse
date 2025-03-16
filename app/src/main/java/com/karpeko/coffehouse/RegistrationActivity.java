@@ -46,7 +46,7 @@ public class RegistrationActivity extends AppCompatActivity {
         String confirmPassword = editTextConfirmPassword.getText().toString().trim();
 
         if (username.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
-            showInfo("Все поля должны быть заполнены");
+            showError("Все поля должны быть заполнены");
             return;
         }
 
@@ -57,17 +57,16 @@ public class RegistrationActivity extends AppCompatActivity {
         }
 
         if (databaseHelper.checkUser (username, email)) {
-            showInfo("Логин или почта уже существуют");
+            showError("Логин или почта уже существуют");
             return;
         }
 
         if (databaseHelper.insertData(username, email, password)) {
-            showInfo("Регистрация успешна!");
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
+            Toast.makeText(this, "Регистрация успешна", Toast.LENGTH_SHORT).show();
+            goToMain();
             finish();
         } else {
-            showInfo("Ошибка регистрации");
+            showError("Ошибка регистрации");
         }
     }
 
@@ -76,7 +75,12 @@ public class RegistrationActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void showInfo(String message) {
+    public void goToMain() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void showError(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

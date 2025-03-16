@@ -15,6 +15,4 @@
     <string name="map">Карта</string>
     <string name="activities">Мероприятия</string>
     <string name="account">Аккаунт</string>
-    <string name="title_orders_list">Список заказов</string>
-    <string name="title_orders_history">История заказов</string>
 </resources>
