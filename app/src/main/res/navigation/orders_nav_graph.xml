@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orders_nav_graph"
+    app:startDestination="@id/navigation_orders_list">
+
+    <fragment
+        android:id="@+id/navigation_orders_list"
+        android:name="com.karpeko.coffehouse.ui.dashboard.insideOrders.OrdersListFragment"
+        android:label="@string/title_orders_list"
+        tools:layout="@layout/fragment_orders_list" />
+
+    <fragment
+        android:id="@+id/navigation_orders_history"
+        android:name="com.karpeko.coffehouse.ui.dashboard.insideOrders.OrdersHistoryFragment"
+        android:label="@string/title_orders_history"
+        tools:layout="@layout/fragment_orders_history" />
+</navigation>

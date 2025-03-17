@@ -13,9 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.karpeko.coffehouse.R;
 import com.karpeko.coffehouse.databinding.FragmentHomeBinding;
-import com.karpeko.coffehouse.menu.ExpandableAdapter;
-import com.karpeko.coffehouse.menu.ExpandableItem;
-
 import java.util.ArrayList;
 import java.util.List;
 
