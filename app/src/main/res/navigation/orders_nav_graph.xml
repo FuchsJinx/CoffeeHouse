@@ -12,8 +12,20 @@
         tools:layout="@layout/fragment_orders_list" />
 
     <fragment
+        android:id="@+id/navigation_orders_table"
+        android:name="com.karpeko.coffehouse.ui.dashboard.insideOrders.OrdersTableFragment"
+        android:label="@string/title_orders_list"
+        tools:layout="@layout/fragment_orders_table" />
+
+    <fragment
         android:id="@+id/navigation_orders_history"
         android:name="com.karpeko.coffehouse.ui.dashboard.insideOrders.OrdersHistoryFragment"
         android:label="@string/title_orders_history"
         tools:layout="@layout/fragment_orders_history" />
+
+    <fragment
+        android:id="@+id/navigation_orders_sale"
+        android:name="com.karpeko.coffehouse.ui.dashboard.insideOrders.OrdersSaleFragment"
+        android:label="@string/title_orders_list"
+        tools:layout="@layout/fragment_orders_sale" />
 </navigation>

@@ -56,17 +56,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        Log.d("MainActivity", "onResume: called");
-//        // Re-setup the NavController and BottomNavigationView
-//        BottomNavigationView navView = binding.navView;
-//        navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
-//        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-//                R.id.navigation_home, R.id.navigation_activities, R.id.navigation_account
-//        ).build();
-//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-//        NavigationUI.setupWithNavController(navView, navController);
-//    }
 }
